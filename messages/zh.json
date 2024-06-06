@@ -11,13 +11,21 @@
     "placeholderText": "在此处输入或粘贴文本...",
     "h1Text": "SoraWebui",
     "pDescription": "SoraWebui 是一个开源项目，允许用户使用 OpenAI 的 Sora 模型使用文本在线生成视频，从而简化视频创建，并具有轻松的一键网站部署功能。",
-    "soraVideoExample": "Sora 生成的示例视频",
+    "soraVideoExample": "Sora 生成的视频",
     "prompt": "提示词",
     "soraWorksTitle": "作品列表",
     "soraResultTitle": "结果",
     "moreExample": "更多示例视频",
     "fakeSoraTip": "FakeSora 旨在模拟尚未发布的 OpenAI Sora API。",
     "soraTip": "OpenAI 尚未发布 Sora 的 API。"
+  },
+  "auth": {
+    "loginText": "登录",
+    "loginModalDesc": "请登录后继续",
+    "loginModalButtonText": "使用谷歌登录",
+    "logoutModalDesc": "您想退出吗？",
+    "confirmButtonText": "确认",
+    "cancelButtonText": "取消"
   },
   "privacyPolicy": {
     "title": "隐私政策 ｜ ",

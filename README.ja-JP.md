@@ -2,7 +2,7 @@
 SoraWebui は、ユーザーがテキストを使って OpenAI の Sora モデルでオンラインビデオを生成できるようにすることで、ビデオ作成を簡素化するオープンソースプロジェクトです。
 👉 [SoraWebui](https://sorawebui.com)
 
-[English](https://github.com/SoraWebui/SoraWebui/blob/main/README.md) | [简体中文](https://github.com/SoraWebui/SoraWebui/blob/main/README.zh-CN.md) | 日本語
+[English](https://github.com/SoraWebui/SoraWebui/blob/login/README.md) | [简体中文](https://github.com/SoraWebui/SoraWebui/blob/login/README.zh-CN.md) | 日本語
 
 
 # プロジェクトプラン
@@ -30,7 +30,7 @@ SoraWebui は、ユーザーがテキストを使って OpenAI の Sora モデ�
 ## クイックスタート
 
 ### Vercel でデプロイ
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSoraWebui%2FSoraWebui&project-name=SoraWebui&repository-name=SoraWebui&external-id=https%3A%2F%2Fgithub.com%2FSoraWebui%2FSoraWebui%2Ftree%2Fmain)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSoraWebui%2FSoraWebui%2Ftree%2Flogin&project-name=SoraWebui&repository-name=SoraWebui&external-id=https%3A%2F%2Fgithub.com%2FSoraWebui%2FSoraWebui%2Ftree%2Flogin)
 
 ### 1. プロジェクトをクローン
 
@@ -58,9 +58,27 @@ NEXT_PUBLIC_SITE_URL=http://localhost
 OPENAI_API_KEY=sk-XXXXXX
 OPENAI_API_BASE_URL=http://localhost:8081
 OPENAI_API_MODEL=sora-1.0-turbo
-```
 
-### 4. 実行
+# postgres config
+POSTGRES_URL=
+
+# Google auth config
+GOOGLE_CLIENT_ID=
+GOOGLE_SECRET_ID=
+
+# NEXTAUTH config
+# create command: openssl rand -base64 32
+NEXTAUTH_SECRET=
+NEXTAUTH_URL=http://localhost
+
+```
+### 4. 追加の構成
+
+1) Google auth config 👉 [Google-Auth-Help](https://github.com/SoraWebui/SoraWebui/blob/login/help/Google-Auth.md)
+
+2) vercel postgres config 👉 [vercel-postgres-Help](https://github.com/SoraWebui/SoraWebui/blob/login/help/vercel-postgres.md)
+
+### 5. 実行
 
 ```bash
 yarn dev
@@ -70,7 +88,7 @@ npm run dev
 pnpm dev
 ```
 
-### 5. [http://localhost](http://localhost) をブラウザで開いてご覧ください。
+### 6. [http://localhost](http://localhost) をブラウザで開いてご覧ください。
 ![success_deploy.jpg](https://sorawebui.com/success_deploy.jpg)
 
 

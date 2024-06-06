@@ -19,6 +19,14 @@
     "fakeSoraTip": "FakeSora is designed to simulate the yet-to-be-released OpenAI Sora API.",
     "soraTip": "OpenAI has not released Sora's API yet."
   },
+  "auth": {
+    "loginText": "Log in",
+    "loginModalDesc": "Please continue by logging in",
+    "loginModalButtonText": "Login with Google",
+    "logoutModalDesc": "Are you want to log out ?",
+    "confirmButtonText": "Confirm",
+    "cancelButtonText": "Cancel"
+  },
   "privacyPolicy": {
     "title": "Privacy Policy ｜ ",
     "description": "",

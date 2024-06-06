@@ -2,7 +2,7 @@
 SoraWebui is an open-source project that simplifies video creation by allowing users to generate videos online with OpenAI's Sora model using text, featuring easy one-click website deployment.
 👉 [SoraWebui](https://sorawebui.com)
 
-English | [简体中文](https://github.com/SoraWebui/SoraWebui/blob/main/README.zh-CN.md) | [日本語](https://github.com/SoraWebui/SoraWebui/blob/main/README.ja-JP.md)
+English | [简体中文](https://github.com/SoraWebui/SoraWebui/blob/login/README.zh-CN.md) | [日本語](https://github.com/SoraWebui/SoraWebui/blob/login/README.ja-JP.md)
 
 
 # Project Plan
@@ -30,7 +30,7 @@ English | [简体中文](https://github.com/SoraWebui/SoraWebui/blob/main/README
 ## Quick Started
 
 ### Deploy on Vercel
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSoraWebui%2FSoraWebui&project-name=SoraWebui&repository-name=SoraWebui&external-id=https%3A%2F%2Fgithub.com%2FSoraWebui%2FSoraWebui%2Ftree%2Fmain)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSoraWebui%2FSoraWebui%2Ftree%2Flogin&project-name=SoraWebui&repository-name=SoraWebui&external-id=https%3A%2F%2Fgithub.com%2FSoraWebui%2FSoraWebui%2Ftree%2Flogin)
 
 ### 1. Clone project
 
@@ -58,9 +58,27 @@ NEXT_PUBLIC_SITE_URL=http://localhost
 OPENAI_API_KEY=sk-XXXXXX
 OPENAI_API_BASE_URL=http://localhost:8081
 OPENAI_API_MODEL=sora-1.0-turbo
-```
 
-### 4. Run it
+# postgres config
+POSTGRES_URL=
+
+# Google auth config
+GOOGLE_CLIENT_ID=
+GOOGLE_SECRET_ID=
+
+# NEXTAUTH config
+# create command: openssl rand -base64 32
+NEXTAUTH_SECRET=
+NEXTAUTH_URL=http://localhost
+
+```
+### 4. Additional configuration
+
+1) Google auth config 👉 [Google-Auth-Help](https://github.com/SoraWebui/SoraWebui/blob/login/help/Google-Auth.md)
+
+2) vercel postgres config 👉 [vercel-postgres-Help](https://github.com/SoraWebui/SoraWebui/blob/login/help/vercel-postgres.md)
+
+### 5. Run it
 
 ```bash
 yarn dev
@@ -70,13 +88,12 @@ npm run dev
 pnpm dev
 ```
 
-### 5. Open [http://localhost](http://localhost) with your browser to see it.
+### 6. Open [http://localhost](http://localhost) with your browser to see it.
 ![success_deploy.jpg](https://sorawebui.com/success_deploy.jpg)
 
 
 # Important
 SoraWebui requires [FakeSoraAPI](https://github.com/SoraWebui/FakeSoraAPI) to function properly.
-
 
 ## Star History
 

@@ -2,7 +2,7 @@
 SoraWebui 是一个开源项目，允许用户使用 OpenAI 的 Sora 模型使用文本在线生成视频，从而简化视频创建，并具有轻松的一键网站部署功能。
 👉 [SoraWebui](https://sorawebui.com)
 
-[English](https://github.com/SoraWebui/SoraWebui/blob/main/README.md) | 简体中文 | [日本語](https://github.com/SoraWebui/SoraWebui/blob/main/README.ja-JP.md)
+[English](https://github.com/SoraWebui/SoraWebui/blob/login/README.md) | 简体中文 | [日本語](https://github.com/SoraWebui/SoraWebui/blob/login/README.ja-JP.md)
 
 # 项目计划
 - ✅ 通过文字生成视频（使用[FakeSoraAPI](https://github.com/SoraWebui/FakeSoraAPI)）:
@@ -29,7 +29,7 @@ SoraWebui 是一个开源项目，允许用户使用 OpenAI 的 Sora 模型使�
 ## 快速开始
 
 ### 在 Vercel 上部署
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSoraWebui%2FSoraWebui&project-name=SoraWebui&repository-name=SoraWebui&external-id=https%3A%2F%2Fgithub.com%2FSoraWebui%2FSoraWebui%2Ftree%2Fmain)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSoraWebui%2FSoraWebui%2Ftree%2Flogin&project-name=SoraWebui&repository-name=SoraWebui&external-id=https%3A%2F%2Fgithub.com%2FSoraWebui%2FSoraWebui%2Ftree%2Flogin)
 
 ### 1. 克隆项目
 
@@ -57,9 +57,27 @@ NEXT_PUBLIC_SITE_URL=http://localhost
 OPENAI_API_KEY=sk-XXXXXX
 OPENAI_API_BASE_URL=http://localhost:8081
 OPENAI_API_MODEL=sora-1.0-turbo
-```
 
-### 4. 运行
+# postgres config
+POSTGRES_URL=
+
+# Google auth config
+GOOGLE_CLIENT_ID=
+GOOGLE_SECRET_ID=
+
+# NEXTAUTH config
+# create command: openssl rand -base64 32
+NEXTAUTH_SECRET=
+NEXTAUTH_URL=http://localhost
+
+```
+### 4. 额外的配置
+
+1) Google auth config 👉 [Google-Auth-Help](https://github.com/SoraWebui/SoraWebui/blob/login/help/Google-Auth.zh-CN.md)
+
+2) vercel postgres config 👉 [vercel-postgres-Help](https://github.com/SoraWebui/SoraWebui/blob/login/help/vercel-postgres.zh-CN.md)
+
+### 5. 运行
 
 ```bash
 yarn dev
@@ -69,7 +87,7 @@ npm run dev
 pnpm dev
 ```
 
-### 4. 在浏览器打开 [http://localhost](http://localhost)
+### 6. 在浏览器打开 [http://localhost](http://localhost)
 ![success_deploy.jpg](https://sorawebui.com/success_deploy.jpg)
 
 

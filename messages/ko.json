@@ -19,8 +19,16 @@
     "fakeSoraTip": "FakeSora 는 아직 출시되지 않은 OpenAI Sora API를 시뮬레이션하도록 설계되었습니다.",
     "soraTip": "OpenAI는 아직 Sora의 API를 출시하지 않았습니다."
   },
+  "auth": {
+    "loginText": "로그인",
+    "loginModalDesc": "로그인하여 계속하세요.",
+    "loginModalButtonText": "Google로 로그인하세요",
+    "logoutModalDesc": "로그아웃하시겠습니까?",
+    "confirmButtonText": "확인하다",
+    "cancelButtonText": "취소"
+  },
   "privacyPolicy": {
-    "title": "개인정보 보호 정책 | ",
+    "title": "개인정보 보호 정책 |",
     "description": "",
     "h1": "개인정보 보호 정책",
     "date": "마지막 업데이트 날짜: 2024년 2월 19일",
